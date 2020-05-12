@@ -1,0 +1,12 @@
+C:\0\Repos\UnicodeInput\bin\Release\UnicodeInput.exe.config
+C:\0\Repos\UnicodeInput\bin\Release\UnicodeInput.exe
+C:\0\Repos\UnicodeInput\bin\Release\UnicodeInput.pdb
+C:\0\Repos\UnicodeInput\bin\Release\UnicodeInput.xml
+C:\0\Repos\UnicodeInput\obj\Release\UnicodeInput.Form1.resources
+C:\0\Repos\UnicodeInput\obj\Release\UnicodeInput.Resources.resources
+C:\0\Repos\UnicodeInput\obj\Release\UnicodeInput.vbproj.GenerateResource.cache
+C:\0\Repos\UnicodeInput\obj\Release\UnicodeInput.exe
+C:\0\Repos\UnicodeInput\obj\Release\UnicodeInput.xml
+C:\0\Repos\UnicodeInput\obj\Release\UnicodeInput.pdb
+C:\0\Repos\UnicodeInput\obj\Release\UnicodeInput.vbprojAssemblyReference.cache
+C:\0\Repos\UnicodeInput\obj\Release\UnicodeInput.Msg.resources
