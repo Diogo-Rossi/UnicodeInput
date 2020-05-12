@@ -54,29 +54,31 @@ Partial Class Form1
         '
         'Convert
         '
-        Me.Convert.Location = New System.Drawing.Point(48, 6)
+        Me.Convert.Location = New System.Drawing.Point(40, 41)
         Me.Convert.Name = "Convert"
         Me.Convert.Size = New System.Drawing.Size(53, 21)
         Me.Convert.TabIndex = 2
+        Me.Convert.TabStop = False
         Me.Convert.Text = "Convert"
         Me.Convert.UseVisualStyleBackColor = True
         '
         'Cancel
         '
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel.Location = New System.Drawing.Point(145, 8)
+        Me.Cancel.Location = New System.Drawing.Point(135, 41)
         Me.Cancel.Name = "Cancel"
-        Me.Cancel.Size = New System.Drawing.Size(55, 17)
+        Me.Cancel.Size = New System.Drawing.Size(55, 21)
         Me.Cancel.TabIndex = 3
+        Me.Cancel.TabStop = False
         Me.Cancel.Text = "Cancel"
         Me.Cancel.UseVisualStyleBackColor = True
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(127, 6)
+        Me.TextBox2.Location = New System.Drawing.Point(126, 5)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(74, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.TextBox2.TabIndex = 1
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label2
@@ -93,7 +95,7 @@ Partial Class Form1
         Me.Ref.Location = New System.Drawing.Point(206, 5)
         Me.Ref.Name = "Ref"
         Me.Ref.Size = New System.Drawing.Size(34, 21)
-        Me.Ref.TabIndex = 6
+        Me.Ref.TabIndex = 2
         Me.Ref.Text = "Ref"
         Me.ToolTip1.SetToolTip(Me.Ref, "https://en.wikipedia.org/wiki/List_of_Unicode_characters")
         Me.Ref.UseVisualStyleBackColor = True
@@ -104,7 +106,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel
-        Me.ClientSize = New System.Drawing.Size(244, 31)
+        Me.ClientSize = New System.Drawing.Size(244, 35)
         Me.Controls.Add(Me.Ref)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -115,8 +117,8 @@ Partial Class Form1
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(260, 70)
-        Me.MinimumSize = New System.Drawing.Size(260, 70)
+        Me.MaximumSize = New System.Drawing.Size(260, 74)
+        Me.MinimumSize = New System.Drawing.Size(260, 74)
         Me.Name = "Form1"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "Unicode Input"
