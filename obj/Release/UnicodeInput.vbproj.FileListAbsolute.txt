@@ -10,3 +10,4 @@ C:\0\Repos\UnicodeInput\obj\Release\UnicodeInput.xml
 C:\0\Repos\UnicodeInput\obj\Release\UnicodeInput.pdb
 C:\0\Repos\UnicodeInput\obj\Release\UnicodeInput.vbprojAssemblyReference.cache
 C:\0\Repos\UnicodeInput\obj\Release\UnicodeInput.Msg.resources
+C:\0\Repos\UnicodeInput\obj\Release\UnicodeInput.Form2.resources

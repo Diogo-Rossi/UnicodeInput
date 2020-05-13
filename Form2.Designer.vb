@@ -96,6 +96,7 @@ Partial Class Form2
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Unicode Input"
+        Me.TopMost = True
         Me.ResumeLayout(False)
 
     End Sub
