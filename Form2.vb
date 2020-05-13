@@ -45,4 +45,8 @@ Public Class Form2
             End If
         End With
     End Sub
+
+    Private Sub ExitProgram_Click(sender As Object, e As EventArgs) Handles ExitProgram.Click
+        Me.Close()
+    End Sub
 End Class

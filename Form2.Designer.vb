@@ -29,6 +29,7 @@ Partial Class Form2
         Me.NullColumn = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Code = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Symbol = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ExitProgram = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'NewSymbol
@@ -60,7 +61,7 @@ Partial Class Form2
         Me.ListView1.Location = New System.Drawing.Point(13, 12)
         Me.ListView1.MultiSelect = False
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(218, 261)
+        Me.ListView1.Size = New System.Drawing.Size(218, 270)
         Me.ListView1.TabIndex = 4
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -74,19 +75,31 @@ Partial Class Form2
         '
         Me.Code.Text = "Code"
         Me.Code.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.Code.Width = 107
+        Me.Code.Width = 100
         '
         'Symbol
         '
         Me.Symbol.Text = "Symbol"
         Me.Symbol.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.Symbol.Width = 107
+        Me.Symbol.Width = 100
+        '
+        'ExitProgram
+        '
+        Me.ExitProgram.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.ExitProgram.Location = New System.Drawing.Point(83, 338)
+        Me.ExitProgram.Name = "ExitProgram"
+        Me.ExitProgram.Size = New System.Drawing.Size(75, 23)
+        Me.ExitProgram.TabIndex = 5
+        Me.ExitProgram.Text = "Exit"
+        Me.ExitProgram.UseVisualStyleBackColor = True
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(243, 317)
+        Me.CancelButton = Me.ExitProgram
+        Me.ClientSize = New System.Drawing.Size(243, 318)
+        Me.Controls.Add(Me.ExitProgram)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.DelSymbol)
         Me.Controls.Add(Me.NewSymbol)
@@ -106,4 +119,5 @@ Partial Class Form2
     Friend WithEvents NullColumn As ColumnHeader
     Friend WithEvents Code As ColumnHeader
     Friend WithEvents Symbol As ColumnHeader
+    Friend WithEvents ExitProgram As Button
 End Class
