@@ -123,6 +123,7 @@ Partial Class Form1
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Unicode Input"
+        Me.TopMost = True
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
