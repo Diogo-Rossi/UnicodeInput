@@ -3,8 +3,8 @@
     Dim Decrescimo As Double
 
     Private Sub Msg_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.Left = Form1.Left + Form1.Width / 2 - Me.Width / 2
-        Me.Top = Form1.Top + Form1.Height / 2 - Me.Height / 2
+        Me.Left = Form2.Left + Form2.Width / 2 - Me.Width / 2
+        Me.Top = Form2.Top + Form2.Height / 2 - Me.Height / 2
         Decrescimo = Timer1.Interval / Tempo
         Timer1.Enabled = True
     End Sub
