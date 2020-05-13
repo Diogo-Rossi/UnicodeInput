@@ -121,6 +121,7 @@ Partial Class Form1
         Me.MinimumSize = New System.Drawing.Size(260, 74)
         Me.Name = "Form1"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Unicode Input"
         Me.ResumeLayout(False)
         Me.PerformLayout()

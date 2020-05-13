@@ -1,5 +1,5 @@
 ﻿Public Class Msg
-    Dim Tempo As Double = 50
+    Dim Tempo As Double = 500
     Dim Decrescimo As Double
 
     Private Sub Msg_Load(sender As Object, e As EventArgs) Handles MyBase.Load

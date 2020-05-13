@@ -45,10 +45,11 @@ Public Class Form1
                 If (AscDigit < 48 Or AscDigit > 57) And (AscDigit < 65 Or AscDigit > 70) And (AscDigit < 97 Or AscDigit > 102) Then
                     Position = Math.Max(Position - 1, 0)
                     .Text = Replace(.Text, Chr(AscDigit), "")
-                    .Select(Position, 0)
                 End If
                 i = i + 1
             End While
+            .Text = UCase(.Text)
+            .Select(Position, 0)
         End With
     End Sub
 
