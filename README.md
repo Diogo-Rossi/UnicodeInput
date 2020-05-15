@@ -9,9 +9,11 @@ The character will be automatically copied to the clipboard. Then, paste it on t
 
 ![](demo1.gif "Unicode Input Demo")
 
-To add a new symbol to the main list, select "New" button and type the character code in hexadecimal form, with **four** digits (0000),  in the first edit box of the new window shown.
 ___
+
 ## Adding new symbol to the list
+
+To add a new symbol to the main list, select "New" button and type the character code in hexadecimal form, with **four** digits (0000),  in the first edit box of the new window shown.
 
 The character will also be automatically copied to the clipboard. Then, paste it on the desired location.  
 To have the same character copied again to the clipboard type the character code again, or just manually copy the character shown in the second edit box.
