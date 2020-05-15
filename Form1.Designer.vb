@@ -40,7 +40,7 @@ Partial Class Form1
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(74, 20)
         Me.TextBox1.TabIndex = 0
-        Me.ToolTip1.SetToolTip(Me.TextBox1, "Type Unicode to Convert. Press Enter to Convert Again")
+        Me.ToolTip1.SetToolTip(Me.TextBox1, "Type Unicode to Convert.")
         '
         'Label1
         '
