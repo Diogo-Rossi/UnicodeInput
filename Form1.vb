@@ -7,11 +7,6 @@ Public Class Form1
         Me.Close()
     End Sub
 
-    Private Sub Convert_Click(sender As Object, e As EventArgs) Handles Convert.Click
-        Call VerifyDigit()
-        Call ConvertCode()
-    End Sub
-
     Private Sub Ref_Click(sender As Object, e As EventArgs) Handles Ref.Click
         Dim webAddress As String = "https://en.wikipedia.org/wiki/List_of_Unicode_characters"
         Process.Start(webAddress)
