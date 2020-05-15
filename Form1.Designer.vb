@@ -26,7 +26,6 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Convert = New System.Windows.Forms.Button()
         Me.Cancel = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -41,7 +40,7 @@ Partial Class Form1
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(74, 20)
         Me.TextBox1.TabIndex = 0
-        Me.ToolTip1.SetToolTip(Me.TextBox1, "Type Unicode to Convert. Press Enter to Convert Again")
+        Me.ToolTip1.SetToolTip(Me.TextBox1, "Type Unicode to Convert.")
         '
         'Label1
         '
@@ -51,16 +50,6 @@ Partial Class Form1
         Me.Label1.Size = New System.Drawing.Size(24, 13)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "U +"
-        '
-        'Convert
-        '
-        Me.Convert.Location = New System.Drawing.Point(40, 41)
-        Me.Convert.Name = "Convert"
-        Me.Convert.Size = New System.Drawing.Size(53, 21)
-        Me.Convert.TabIndex = 2
-        Me.Convert.TabStop = False
-        Me.Convert.Text = "Convert"
-        Me.Convert.UseVisualStyleBackColor = True
         '
         'Cancel
         '
@@ -102,7 +91,6 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AcceptButton = Me.Convert
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel
@@ -112,7 +100,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Convert)
         Me.Controls.Add(Me.Cancel)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
@@ -131,7 +118,6 @@ Partial Class Form1
 
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Convert As Button
     Friend WithEvents Cancel As Button
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label2 As Label

@@ -2,14 +2,9 @@
 
 Public Class Form1
     Private Sub Cancel_Click(sender As Object, e As EventArgs) Handles Cancel.Click
-        My.Settings.BeforeValue = TextBox1.Text
-        My.Settings.Save()
+        'My.Settings.BeforeValue = TextBox1.Text
+        'My.Settings.Save()
         Me.Close()
-    End Sub
-
-    Private Sub Convert_Click(sender As Object, e As EventArgs) Handles Convert.Click
-        Call VerifyDigit()
-        Call ConvertCode()
     End Sub
 
     Private Sub Ref_Click(sender As Object, e As EventArgs) Handles Ref.Click
@@ -17,16 +12,10 @@ Public Class Form1
         Process.Start(webAddress)
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        With TextBox1
-            .Text = My.Settings.BeforeValue
-            .Select(Len(.Text), 0)
-        End With
-    End Sub
-
     Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         My.Settings.BeforeValue = TextBox1.Text
         My.Settings.Save()
+        Form2.Close()
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
@@ -54,17 +43,21 @@ Public Class Form1
     End Sub
 
     Private Sub ConvertCode()
+        Dim Code As String, Symbol As String
         With TextBox1
             If Len(.Text) = 4 And .Text <> "0000" Then
-                TextBox2.Text = ChrW("&H" + CStr(.Text))
-                Clipboard.SetText(CStr(TextBox2.Text))
+                Code = "U+" + .Text
+                Symbol = ChrW("&H" + CStr(.Text))
+                TextBox2.Text = Symbol
+                Clipboard.SetText(Symbol)
                 Msg.Show()
-                'Me.Activate()
+                With Form2.ListView1
+                    .Items.Add("-")
+                    .Items(.Items.Count - 1).SubItems.Add(Code)
+                    .Items(.Items.Count - 1).SubItems.Add(Symbol)
+                End With
             End If
         End With
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
-
-    End Sub
 End Class
