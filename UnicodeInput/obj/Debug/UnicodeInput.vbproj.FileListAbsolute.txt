@@ -36,3 +36,6 @@ C:\0\Repos\UnicodeInput\UnicodeInput\UnicodeInput\obj\Debug\UnicodeInput.vbproj.
 C:\0\Repos\UnicodeInput\UnicodeInput\UnicodeInput\obj\Debug\UnicodeInput.exe
 C:\0\Repos\UnicodeInput\UnicodeInput\UnicodeInput\obj\Debug\UnicodeInput.xml
 C:\0\Repos\UnicodeInput\UnicodeInput\UnicodeInput\obj\Debug\UnicodeInput.pdb
+C:\0\Repos\UnicodeInput\UnicodeInput\obj\Debug\UnicodeInput.Form2.resources
+C:\0\Repos\UnicodeInput\UnicodeInput\obj\Debug\UnicodeInput.Msg.resources
+C:\0\Repos\UnicodeInput\UnicodeInput\obj\Debug\UnicodeInput.vbproj.CoreCompileInputs.cache

@@ -43,6 +43,9 @@ Public Class Form2
             If .SelectedIndices.Count > 0 Then
                 .Items.Remove(.Items(.SelectedIndices.Item(0)))
             End If
+            If .Items.Count > 0 Then
+                .Items(.Items.Count - 1).Selected = True
+            End If
         End With
     End Sub
 

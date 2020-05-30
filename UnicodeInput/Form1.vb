@@ -43,7 +43,7 @@ Public Class Form1
     End Sub
 
     Private Sub ConvertCode()
-        Dim Code As String, Symbol As String
+        Dim Code As String, Symbol As String, AlreadyHave As Boolean
         With TextBox1
             If Len(.Text) = 4 And .Text <> "0000" Then
                 Code = "U+" + .Text
@@ -52,9 +52,17 @@ Public Class Form1
                 Clipboard.SetText(Symbol)
                 Msg.Show()
                 With Form2.ListView1
-                    .Items.Add("-")
-                    .Items(.Items.Count - 1).SubItems.Add(Code)
-                    .Items(.Items.Count - 1).SubItems.Add(Symbol)
+                    AlreadyHave = False
+                    For Each item In .Items
+                        If item.SubItems(1).Text = Code Then
+                            AlreadyHave = True
+                        End If
+                    Next
+                    If Not AlreadyHave Then
+                        .Items.Add("-")
+                        .Items(.Items.Count - 1).SubItems.Add(Code)
+                        .Items(.Items.Count - 1).SubItems.Add(Symbol)
+                    End If
                 End With
             End If
         End With
